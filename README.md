@@ -38,6 +38,7 @@ This is a solution to the [Single-page design portfolio challenge on Frontend Me
 - [Sass](https://sass-lang.com/) - SCSS for maintainable and modular styles
 - [Vite](https://vite.dev/) - Build tool for modern web development
 - [Vercel](https://vercel.com/) - Hosting and deployment platform
+- [Splide.js](https://splidejs.com) – For accessible and customizable sliders
 
 ## Author
 
