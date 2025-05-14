@@ -11,6 +11,11 @@
     &:hover {
         background-color: var(--clr-graphic);
     }
+
+    &:focus-visible {
+        outline: rem(4) solid var(--clr-graphic);
+        outline-offset: rem(3);
+    }
 }
 
 @mixin btn-light {
@@ -24,6 +29,11 @@
     &:hover {
         background-color: var(--clr-ui);
     }
+
+    &:focus-visible {
+        outline: rem(4) solid var(--clr-graphic);
+        outline-offset: rem(3);
+    }
 }
 
 @mixin btn-arrow {
@@ -34,5 +44,10 @@
 
     &:hover {
         background-color: var(--clr-graphic);
+    }
+    
+    &:focus-visible {
+        outline: rem(4) solid var(--clr-graphic);
+        outline-offset: rem(3);
     }
 }

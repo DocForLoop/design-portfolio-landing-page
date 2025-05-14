@@ -1,2 +1,58 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+.body {
+    min-block-size: 100vh;
+}
+
+.page-wrapper {
+    inline-size: 100%;
+    max-inline-size: rem(1650);
+}
+
+.header {
+    padding-inline: fluid(16, 39, 375, 768);
+    padding-block-start: fluid(16, 34, 375, 768);
+    margin-block-end: 8px;
+
+    &__content {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: var(--fs-h1-mob-tab);
+        color: var(--clr-dark);
+    }
+
+    &__desc {
+        padding-inline: 29px;
+        max-inline-size: 50ch;
+    }
+}
+
+.logo-link {
+    flex-shrink: 0;
+    border-radius: rem(3);
+
+    &__icon {
+        inline-size: fluid(48, 64, 375, 768, rem);
+        block-size: fluid(48, 64, 375, 768, rem);
+
+    }
+
+    &:focus-visible {
+        outline: rem(4) solid var(--clr-graphic);
+        outline-offset: rem(3);
+    }
+}
+
+.cta-btn {
+    white-space: nowrap;
+    line-height: var(--lh-cta-btn);
+}
+
+.cta-btn--dark {
+    @include m.btn-dark;
+    padding-block: fluid(8, 14, 375, 768);
+    padding-inline: fluid(28, 45, 375, 768);
+}

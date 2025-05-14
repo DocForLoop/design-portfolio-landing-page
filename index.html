@@ -25,138 +25,148 @@
      
     <script type="module" src="src/main.ts"></script>
   </head>
-  <body>
-    <div>
-      <header>
-        <div>
-          <a href="#">
-            <img src="/src/assets/images/logo.svg" 
+  <body class="body">
+    <div class="page-wrapper">
+      <header class="header">
+        <div class="header__top">
+          <a class="logo-link" href="#">
+            <img class="logo-link__icon" src="/src/assets/images/logo.svg" 
                 alt="Home of Amy's portfolio webpage" width="48" height="48">
           </a>
 
-          <a href="#">Free Consultation</a>
+          <a class="cta-btn cta-btn--dark" href="#">Free Consultation</a>
         </div>
 
-        <section>
-          <h1>Design solutions made easy</h1>
-          <p>With over ten years of experience in various design disciplines, 
+        <section class="header__content">
+          <h1 class="header__title">Design solutions made easy</h1>
+
+          <p class="header__desc">With over ten years of experience in various design disciplines, 
             I’m your one-stop shop for your design needs.
           </p>
         </section>
       </header>
 
-      <main>
-        <section aria-label="Service categories">
-          <div>
-            <img src="/src/assets/images/pattern-graphic-design.svg" alt="" width="128" height="192">
-            <p><strong>Graphic Design</strong></p>
-          </div>
-
-          <div>
-            <img src="/src/assets/images/pattern-ui-ux.svg" alt="" width="64" height="64">
-            <p><strong>UI/UX</strong></p>
-          </div>
-
-          <div>
-            <img src="/src/assets/images/pattern-apps.svg" alt="" width="64" height="64">
-            <p><strong>Apps</strong></p>
-          </div>
-
-          <div>
-            <img src="/src/assets/images/pattern-illustrations.svg" alt="" width="128" height="64">
-            <p><strong>Illustrations</strong></p>
-          </div>
-
-          <div>
-            <img src="/src/assets/images/pattern-photography.svg" alt="" width="160" height="64">
-            <p><strong>Photography</strong></p>
-          </div>
-
-          <div>
-            <img src="/src/assets/images/pattern-motion-graphics.svg" alt="" width="128" height="64">
-            <p><strong>Motion Graphics</strong></p>
-          </div>
+      <main class="main">
+        <section class="service" aria-label="Service categories">
+          <ul class="service__list">
+            <li class="service__item service__item--graphic">
+              <img class="service__image" src="/src/assets/images/pattern-graphic-design.svg" 
+                    alt="" width="128" height="192">
+              <p class="service__label"><strong>Graphic Design</strong></p>
+            </li>
+          
+            <li class="service__item service__item--ui">
+              <img class="service__image" src="/src/assets/images/pattern-ui-ux.svg" 
+                    alt="" width="64" height="64">
+              <p class="service__label"><strong>UI/UX</strong></p>
+            </li>
+          
+            <li class="service__item service__item--apps">
+              <img class="service__image" src="/src/assets/images/pattern-apps.svg" 
+                    alt="" width="64" height="64">
+              <p class="service__label"><strong>Apps</strong></p>
+            </li>
+          
+            <li class="service__item service__item--illustrations">
+              <img class="service__image" src="/src/assets/images/pattern-illustrations.svg" 
+                    alt="" width="128" height="64">
+              <p class="service__label"><strong>Illustrations</strong></p>
+            </li>
+          
+            <li class="service__item service__item--photography">
+              <img class="service__image" src="/src/assets/images/pattern-photography.svg" 
+                    alt="" width="160" height="64">
+              <p class="service__label"><strong>Photography</strong></p>
+            </li>
+          
+            <li class="service__item service__item--motion">
+              <img class="service__image" src="/src/assets/images/pattern-motion-graphics.svg" 
+                    alt="" width="128" height="64">
+              <p class="service__label"><strong>Motion Graphics</strong></p>
+            </li>
+          </ul>
         </section>
 
-        <section aria-labelledby="introduce">
-          <img src="/src/assets/images/image-amy.webp" alt="" width="300" height="300">
+        <section class="intro" aria-labelledby="introduce">
+          <img class="intro__avatar" src="/src/assets/images/image-amy.webp" 
+                alt="" width="300" height="300">
 
-          <div>
-            <h2 id="introduce">I’m Amy, and I’d love to work on your next project</h2>
+          <div class="intro__content">
+            <h2 class="intro__title" id="introduce">I’m Amy, and I’d love to work on your next project</h2>
 
-            <p>I love working with others to create beautiful design solutions. 
+            <p class="intro__desc">I love working with others to create beautiful design solutions. 
               I’ve designed everything from brand illustrations 
               to complete mobile apps. I’m also handy with a camera!
             </p>
 
-            <a href="#">Free Consultation</a>
+            <a class="cta-btn cta-btn--light" href="#">Free Consultation</a>
           </div>
         </section>
 
         <section class="splide" aria-labelledby="carousel-heading">
-          <h2 id="carousel-heading">My work</h2>
+          <h2 class="splide__title" id="carousel-heading">My work</h2>
 
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <img src="/src/assets/images/image-slide-1.jpg"
+                <img class="splide__img" src="/src/assets/images/image-slide-1.jpg"
                       alt="" width="270" height="180">
               </li>
 
               <li class="splide__slide">
-                <img src="/src/assets/images/image-slide-2.jpg"
+                <img class="splide__img" src="/src/assets/images/image-slide-2.jpg"
                       alt="" width="270" height="180">
               </li>
 
               <li class="splide__slide">
-                <img src="/src/assets/images/image-slide-3.jpg"
+                <img class="splide__img" src="/src/assets/images/image-slide-3.jpg"
                       alt="" width="270" height="180">
               </li>
 
               <li class="splide__slide">
-                <img src="/src/assets/images/image-slide-4.jpg"
+                <img class="splide__img" src="/src/assets/images/image-slide-4.jpg"
                       alt="" width="270" height="180">
               </li>
 
               <li class="splide__slide">
-                <img src="/src/assets/images/image-slide-5.jpg"
+                <img class="splide__img" src="/src/assets/images/image-slide-5.jpg"
                        alt="" width="270" height="180">
                 </li>
             </ul>
           </div>
           
-          <div>
-            <button type="button" aria-label="Previous slide">
-              <img src="/src/assets/images/icon-arrow-left.svg" 
+          <div class="splide__btn-wrapper">
+            <button class="splide__btn splide__btn--prev" type="button" aria-label="Previous slide">
+              <img class="splide__icon" src="/src/assets/images/icon-arrow-left.svg" 
                   alt="" width="15" height="16" loading="lazy" decoding="async">
             </button>
-            
-            <button type="button" aria-label="Next slide">
-              <img src="/src/assets/images/icon-arrow-right.svg" 
+
+            <button class="splide__btn splide__btn--next" type="button" aria-label="Next slide">
+              <img class="splide__icon" src="/src/assets/images/icon-arrow-right.svg" 
                   alt="" width="15" height="16" loading="lazy" decoding="async">
             </button>
           </div>
         </section>
 
-        <section>
-          <h2>Book a call with me</h2>
+        <section class="book">
+          <h2 class="book__title">Book a call with me</h2>
 
-          <p>I’d love to have a chat to see how I can help you. 
+          <p class="book__desc">I’d love to have a chat to see how I can help you. 
               The best first step is for us to discuss your project during a 
                free consultation. Then we can move forward from there.
           </p>
 
-          <a href="#">Free Consultation</a>
+          <a class="cta-btn cta-btn--light" href="#">Free Consultation</a>
         </section>
       </main>
 
-      <footer>
-         <a href="#">
-            <img src="/src/assets/images/logo.svg" 
+      <footer class="footer">
+         <a class="logo-link" href="#">
+            <img class="logo-link__icon" src="/src/assets/images/logo.svg" 
                 alt="Home of Amy's portfolio webpage" width="48" height="48" loading="lazy" decoding="async">
           </a>
 
-          <a href="#">Free Consultation</a>
+          <a class="cta-btn cta-btn--dark" href="#">Free Consultation</a>
       </footer>
     </div>
   </body>
