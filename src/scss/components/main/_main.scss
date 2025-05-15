@@ -144,6 +144,11 @@
     &__btn {
         @include m.btn-arrow;
     }
+
+    &__icon {
+        inline-size: rem(15);
+        block-size: rem(16);
+    }
 }
 
 .contact {

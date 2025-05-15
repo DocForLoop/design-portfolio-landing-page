@@ -1,2 +1,8 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+.footer {
+    margin-block-start: 8px;
+    padding-inline: fluid(16, 39, 375, 768);
+    padding-block-end: fluid(32, 56, 375, 768);
+}
