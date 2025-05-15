@@ -1,2 +1,54 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+@media (width > em(767.7)) {
+
+    .header {
+        margin-block-end: fluid(16, 32, 768, 1440);
+        padding-inline: fluid(39, 165, 768, 1440);
+    }
+
+    .service {
+        padding-inline: fluid(39, 165, 768, 1440);
+
+        &__list {
+        grid-auto-columns: 1fr;
+        grid-template-rows: rem(182) rem(158) rem(182);
+        grid-template-areas: 
+        "graph graph ui apps"
+        "graph graph illust illust"
+        "photo photo motion motion";
+        }
+    }
+
+    .intro {
+        flex-direction: row;
+        column-gap: fluid(69, 125, 768, 1440);
+        text-align: start;
+        transform: translateX(-48px);
+        padding-inline-start: fluid(0, 165, 768, 1440);
+
+        &__avatar {
+            min-inline-size: fluid(364, 445, 768, 1440, rem);
+            block-size: fluid(364, 445, 768, 1440, rem);
+        }
+
+        &__content {
+            padding-inline: 0;
+            align-items: flex-start;
+        }
+
+        &__title {
+            max-inline-size: 19ch;
+        }
+    }
+
+    .contact {
+        margin-inline: fluid(39, 165, 768, 1440);
+    }
+
+    .footer {
+        padding-inline: fluid(39, 165, 768, 1440);
+        padding-block-end: fluid(56, 64, 768, 1440);
+    }
+}

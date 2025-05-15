@@ -93,18 +93,21 @@
     text-align: center;
     
     &__avatar {
-        min-inline-size: rem(300);
-        block-size: rem(300);
+        min-inline-size: fluid(300, 364, 375, 768, rem);
+        block-size: fluid(300, 364, 375, 768, rem);
     }
     
     &__content {
         padding-inline: 16px;
-        
     }
 
     &__title {
         font-size: var(--fs-h2-mob-tab);
         color: var(--clr-dark);
+    }
+    
+    &__desc {
+        max-inline-size: 42ch;
     }
 }
 

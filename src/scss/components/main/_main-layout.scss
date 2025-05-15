@@ -8,7 +8,7 @@
 
 .service {
 
-    &__list{
+    &__list {
         display: grid;
         grid-auto-columns: 1fr;
         grid-template-rows: repeat(2, rem(182) - rem(12)) rem(182) rem(158) repeat(2, rem(182));
