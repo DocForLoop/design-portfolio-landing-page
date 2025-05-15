@@ -120,6 +120,10 @@
 .splide {
     position: relative;
 
+    &__track {
+        border-radius: rem(10);
+    }
+
     &__title {
         font-size: var(--fs-slider-title);
         color: var(--clr-dark);

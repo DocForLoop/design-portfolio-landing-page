@@ -1,7 +1,5 @@
 import './scss/style.scss';
-
 import '@splidejs/splide/dist/css/themes/splide-skyblue.min.css';
-
 import Splide from '@splidejs/splide';
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -12,12 +12,11 @@
         padding-inline: fluid(39, 165, 768, 1440);
 
         &__list {
-        grid-auto-columns: 1fr;
-        grid-template-rows: rem(182) rem(158) rem(182);
-        grid-template-areas: 
-        "graph graph ui apps"
-        "graph graph illust illust"
-        "photo photo motion motion";
+            grid-template-rows: rem(182) rem(158) rem(182);
+            grid-template-areas: 
+            "graph graph ui apps"
+            "graph graph illust illust"
+            "photo photo motion motion";
         }
     }
 
@@ -36,19 +35,76 @@
         &__content {
             padding-inline: 0;
             align-items: flex-start;
+            row-gap: fluid(24, 33, 768, 1440);
         }
 
         &__title {
             max-inline-size: 19ch;
+            font-size: var(--fs-h2-desk);
         }
     }
 
     .contact {
         margin-inline: fluid(39, 165, 768, 1440);
+
+        &__title {
+            font-size: var(--fs-h2-desk);
+        }
     }
 
     .footer {
         padding-inline: fluid(39, 165, 768, 1440);
         padding-block-end: fluid(56, 64, 768, 1440);
+    }
+}
+
+@media (width > em(1201)) {
+
+    .body {
+        line-height: var(--lh-body-desk);
+    }
+
+    .main {
+        row-gap: 88px;
+    }
+
+    .header {
+
+        &__content {
+            row-gap: 23px;
+        }
+
+        &__desc {
+            max-inline-size: 60ch;
+        }
+    }
+
+    .service {
+
+        &__list {
+            grid-template-rows: rem(182) rem(158);
+            grid-template-areas: 
+            "graph graph ui apps photo photo"
+            "graph graph illust illust motion motion";
+        }
+    }
+
+    .intro {
+        margin-block-start: 48px;
+        transform: unset;
+        column-gap: fluid(125, 200, 1440, 1650);
+    }
+
+    .contact {
+        text-align: start;
+        flex-direction: row;
+        column-gap: fluid(182, 360, 1440, 1650);
+        padding-inline-start: 65px;
+        padding-inline-end: 95px;
+        padding-block: 81.5px;
+        
+        &__content {
+            align-items: flex-start;
+        }
     }
 }
