@@ -138,7 +138,7 @@
     }
 
     &__slide {
-        flex: 0 0 fluid(270, 540, 375, 768, rem);
+        flex: 0 0 min(100%, fluid(270, 540, 375, 768, rem));
     }
 
     &__btn {
