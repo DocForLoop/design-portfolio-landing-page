@@ -19,17 +19,17 @@
 
 :root {
     --ff-primary: 'Plus Jakarta Sans', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    --fs-h1-mob-tab: #{fluid(36, 44, 375, 768, rem)};
+    --fs-h1-mob-tab: #{fluid(36, 44, 375, 768, rem)};//
     --fs-h1-desk: #{fluid(44, 56, 768, 1440, rem)};
-    --fs-card: #{rem(24)};
-    --fs-h2-mob-tab: #{fluid(26, 32, 375, 768, rem)};
+    --fs-card: #{rem(24)};//
+    --fs-h2-mob-tab: #{fluid(26, 32, 375, 768, rem)};//
     --fs-h2-desk: #{fluid(32, 40, 768, 1440, rem)};
-    --fs-slider-title: #{fluid(24, 32, 375, 768, rem)};
-    --fs-btn: #{fluid(14, 16, 375, 768, rem)};
-    --fs-body: #{fluid(16, 18, 375, 768, rem)};
+    --fs-slider-title: #{fluid(24, 32, 375, 768, rem)};//
+    --fs-btn: #{fluid(14, 16, 375, 768, rem)};//
+    --fs-body: #{fluid(16, 18, 375, 768, rem)};//
     --fw-1: 500;
     --fw-2: 700;
-    --lh-body-mob: calc(26/16);
+    --lh-body-mob: calc(26/16);//
     --lh-body-desk: calc(28/18);
-    --lh-cta-btn: 2;
+    --lh-cta-btn: 2;//
 }

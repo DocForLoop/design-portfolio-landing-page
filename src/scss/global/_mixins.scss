@@ -22,7 +22,7 @@
     border-radius: rem(28);
     font-size: var(--fs-btn);
     font-weight: var(--fw-2);
-    color: var(--clr-light);
+    color: var(--clr-dark);
     background-color: var(--clr-illust);
     transition: background-color 0.3s;
 
@@ -39,6 +39,8 @@
 @mixin btn-arrow {
     border-radius: 50%;
     border: none;
+    padding: 24px;
+    cursor: pointer;
     background-color: var(--clr-dark);
     transition: background-color 0.3s;
 

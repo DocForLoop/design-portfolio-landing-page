@@ -1,1 +1,62 @@
 @use '@scss/global/functions' as *;
+
+.main {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(100, 120, 375, 768);
+}
+
+.service {
+
+    &__list{
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-rows: repeat(2, rem(182) - rem(12)) rem(182) rem(158) repeat(2, rem(182));
+        grid-template-areas: 
+        "graph graph"
+        "graph graph"
+        "ui apps"
+        "illust illust"
+        "photo photo"
+        "motion motion";
+        gap: 24px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 24px;
+    }
+}
+
+.splide {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(32, 56, 375, 768);
+
+    &__btn-wrapper {
+        display: flex;
+        column-gap: 10px;
+    }
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: fluid(24, 26, 375, 768);
+}
