@@ -45,8 +45,7 @@
 
     &__image--graphic {
         inline-size: rem(128);
-        block-size: rem(192);
-        
+        block-size: rem(192); 
     }
 
     &__image--ui {
@@ -57,25 +56,21 @@
     &__image--apps {
         inline-size: rem(64);
         block-size: rem(64);
-
     }
 
     &__image--illustrations {
         inline-size: rem(128);
         block-size: rem(64);
-
     }
 
     &__image--photography {
         inline-size: rem(160);
         block-size: rem(64);
-
     }
 
     &__image--motion {
         inline-size: rem(128);
         block-size: rem(64);
-
     }
 
     &__label {
