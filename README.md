@@ -20,8 +20,8 @@ This is a solution to the [Single-page design portfolio challenge on Frontend Me
 
 ### Links
 
-- [Solution](https://www.frontendmentor.io/)
-- [Live Site](https://)
+- [Solution](https://www.frontendmentor.io/solutions/responsive-fluid-design-portfolio-using-splide-for-the-carousel-Qp9ExOOps3)
+- [Live Site](https://design-portfolio-landing-page.vercel.app//)
 
 ## My process
 
