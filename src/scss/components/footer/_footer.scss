@@ -5,4 +5,30 @@
     margin-block-start: 8px;
     padding-inline: fluid(16, 39, 375, 768);
     padding-block-end: fluid(32, 56, 375, 768);
+
+    &__attribution {
+        position: absolute;
+        inset-block-end: 3px;
+        inset-inline: 0;
+        font-size: rem(11);
+        text-align: center;
+        color: var(--clr-dark);
+    }
+
+    &__attribution-link {
+        color: var(--clr-dark);
+        border-radius: rem(3);
+        text-decoration: underline;
+        transition: color 0.3s;
+
+        &:hover,
+        &:focus-visible {
+            color: var(--clr-attr);
+        }
+
+        &:focus-visible {
+            outline: rem(3) solid var(--clr-attr);
+            outline-offset: rem(2);
+        }
+    }
 }
